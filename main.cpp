@@ -6,6 +6,8 @@ int main() {
     const int MY_HOTKEY_UP = 2;
     const int MY_MOD_CONTROL = MOD_CONTROL | MOD_NOREPEAT;
 
+    ShowWindow(GetConsoleWindow(), SW_HIDE); // Скрываем окно командной строки
+
     // Регистрируем горячие клавиши Ctrl+Down и Ctrl+Up
     if (!RegisterHotKey(NULL, MY_HOTKEY_DOWN, MY_MOD_CONTROL, VK_DOWN)) {
         std::cerr << "Не удалось зарегистрировать горячую клавишу Ctrl+Down!" << std::endl;
