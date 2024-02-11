@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include <windows.h>
 
 int main() {
@@ -13,15 +13,12 @@ int main() {
 
     // Регистрируем горячие клавиши Ctrl+Down и Ctrl+Up
     if (!RegisterHotKey(NULL, MY_HOTKEY_DOWN, MY_MOD_CONTROL, VK_LEFT)) {
-        std::cerr << "Не удалось зарегистрировать горячую клавишу Ctrl+Down!" << std::endl;
         return 1;
     }
     if (!RegisterHotKey(NULL, MY_HOTKEY_UP, MY_MOD_CONTROL, VK_RIGHT)) {
-        std::cerr << "Не удалось зарегистрировать горячую клавишу Ctrl+Up!" << std::endl;
         return 1;
     }
     if (!RegisterHotKey(NULL, MY_HOTKEY_MUTE, MY_MOD_CONTROL, VK_DOWN)) {
-        std::cerr << "Не удалось зарегистрировать горячую клавишу Ctrl+Up!" << std::endl;
         return 1;
     }
 
