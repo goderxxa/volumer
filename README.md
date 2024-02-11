@@ -4,4 +4,4 @@
 ### Ctrl+right to UP VOL
 ### Ctrl+down to MUTE
 ### You can add it to STARTUP and close it by hit ctrl+shift+esc
-![Uploading image.png…]()
+![image](https://github.com/goderxxa/volumer/assets/35173779/8958033a-bf1f-44e4-9773-e05ec1187b4c)
